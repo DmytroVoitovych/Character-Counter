@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "DMSans";
+    src:
+      local("DMSans"),
+      url("../fonts/DM_Sans/static/DMSans-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "DMSans";
+    src:
+      local("DMSans"),
+      url("../fonts/DM_Sans/static/DMSans-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "DMSans";
+    src:
+      local("DMSans"),
+      url("../fonts/DM_Sans/static/DMSans-SemiBold.ttf") format("truetype");
+  }
