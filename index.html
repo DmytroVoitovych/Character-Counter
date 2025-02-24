@@ -16,42 +16,79 @@
   <body>
     <header class="container">
       <a href="/" class="characterCounterLogo txt-preset-2">Character counter</a>
-      <label for="themeSwitcher"
+      <label for="themeSwitcher" aria-label="theme switcher"
         ><input type="checkbox" name="themeSwitcher" id="themeSwitcher"
       /></label>
     </header>
 
     <main class="container">
-    <section class="hero">
-      <h1 class="txt-preset-1">Analyze your text in real-time.</h1>
-      <form action="">
-        <textarea class="txt-preset-3" name="" id="" placeholder="Start typing here… (or paste your text)"></textarea>
-        <ul class="textOptionList txt-preset-4">
-        <li><label for=""><input type="checkbox" name="" id="">Exclude
-          Spaces</label></li>
-        <li><label  for=""><input type="checkbox" name="" id="">Set Character Limit</label></li>  
+      <section class="hero">
+        <h1 class="txt-preset-1">
+          Analyze your text <br class="titlePre" />
+          in real-time.
+        </h1>
+        <form action="">
+          <textarea
+            class="txt-preset-3"
+            name=""
+            id=""
+            placeholder="Start typing here… (or paste your text)"
+          ></textarea>
+          <ul class="textOptionList txt-preset-4">
+            <li>
+              <label for="excludeSpaces"
+                ><input
+                  type="checkbox"
+                  name="excludeSpaces"
+                  id="excludeSpaces"
+                />Exclude Spaces</label
+              >
+            </li>
+            <li>
+              <label for="characterLimit"
+                ><input
+                  type="checkbox"
+                  name="characterLimit"
+                  id="characterLimit"
+                />Set Character Limit <input
+                type="number"
+                name="numberLimit"
+                id="numberLimit"
+              /></label
+              >
+            </li>
+            
+          </ul>
+          <p class="timeReading txt-preset-4">
+            Approx. reading time: <span class="dynamicTime">0 minute</span>
+          </p>
+        </form>
+      </section>
+      <section class="countsList">
+        <ul>
+          <li>
+            <b id="totalCharacters" class="txt-preset-1">00</b>
+            <p class="txt-preset-3">Total Characters</p>
+          </li>
+          <li>
+            <b id="wordCount" class="txt-preset-1">00</b>
+            <p class="txt-preset-3">Word Count</p>
+          </li>
+          <li>
+            <b id="sentenceCount" class="txt-preset-1">00</b>
+            <p class="txt-preset-3">Sentence Count</p>
+          </li>
         </ul>
-        <p class="timeReading txt-preset-4">Approx. reading time: <span class="dynamicTime">0 minute</span>  </p>
-      </form>
-    </section>
-    <section class="countsList">
-      <ul>
-        <li><b id="totalCharacters" class="txt-preset-1" >00</b><p class="txt-preset-3" >Total Characters</p></li>
-        <li><b id="wordCount" class="txt-preset-1" >00</b><p class="txt-preset-3" >Word Count</p></li>
-        <li><b id="sentenceCount" class="txt-preset-1" >00</b><p class="txt-preset-3" >Sentence Count</p></li>
-      </ul>
-    </section>
-    <section class="letterStatistic">
-      <div class="letterTitle">
-        <h2 class="txt-preset-2">Letter Density</h2>
-        <p class="txt-preset-4">No characters found. Start typing to see letter
-          density.</p>
-      </div>
-      <ul class="dynamicLetterList txt-preset-4">
-
-      </ul>
-    </section>
-
-    </main>      
+      </section>
+      <section class="letterStatistic">
+        <div class="letterTitle">
+          <h2 class="txt-preset-2">Letter Density</h2>
+          <p class="txt-preset-4">
+            No characters found. Start typing to see letter density.
+          </p>
+        </div>
+        <ul class="dynamicLetterList txt-preset-4"></ul>
+      </section>
+    </main>
   </body>
 </html>

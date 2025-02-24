@@ -9,8 +9,8 @@
     --neutral-0: #FFFFFF;
     
     /* Purple colors */
-    --blue-400: #D3A0FA;
-    --blue-500: #C27CF8;
+    --purple-400: #D3A0FA;
+    --purple-500: #C27CF8;
     
     /* Yellow colors */
     --yellow-500: #FF9F00;
@@ -30,6 +30,12 @@
   /* txt */
   --txt-cl-main:var(--neutral-900);
   --txt-cl-title:var(--neutral-900);
+  --txt-cl-textarea:var(var(--neutral-700));
+  --txt-empty-point:var(--neutral-600);
+
+  /* other */
+  --logo-img:url(../images/logo-light-theme.svg);
+  --theme-img:url(../images/icon-moon.svg);
 }
 
   html.dark{
@@ -44,4 +50,10 @@
   /* txt */
   --txt-cl-main:var(--neutral-200);
   --txt-cl-title:var(--neutral-100);
+  --txt-cl-textarea:var(var(--neutral-200));
+  --txt-empty-point:var(--neutral-200);
+
+  /* other */
+  --logo-img:url(../images/logo-dark-theme.svg);
+  --theme-img:url(../images/icon-sun.svg);
 }
