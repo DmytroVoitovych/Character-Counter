@@ -24,7 +24,8 @@
   --bg-theme-switcher:var(--neutral-100);
   --bg-border-main:var(--neutral-200);
   --bg-border-chackbox:var(--neutral-900);
-  --bg-progress:var(--neutral-100);  
+  --bg-progress:var(--neutral-100);
+  --bg-input-number:var(--neutral-0);  
   
 
   /* txt */
@@ -45,6 +46,7 @@
   --bg-border-main:var(--neutral-600);
   --bg-border-chackbox:var(--neutral-200);
   --bg-progress:var(--neutral-800);
+  --bg-input-number:transparent;
   
 
   /* txt */
