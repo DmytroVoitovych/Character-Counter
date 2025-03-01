@@ -7,7 +7,6 @@ body {
   font-family: DMSans;
   background: var(--bg-main);
   color: var(--txt-cl-main);
-  /* transition: background-image 2500ms ease-in-out; */
   overflow-x: hidden;
 }
 
@@ -305,8 +304,20 @@ section.letterStatistic {
       display: grid;
       align-items: center;
       gap: 14px;
-      grid-template-columns: 1% 84% 1fr;
+      grid-template-columns: 1% 60% 1fr;
       overflow: hidden;
+
+      @media screen and (min-width: 380px) {
+        grid-template-columns: 1% 67% 1fr;
+      }
+
+      @media screen and (min-width: 768px) {
+        grid-template-columns: 1% 84% 1fr;
+      }
+    }
+
+    & > li:not(:last-child) {
+      margin-bottom: 12px;
     }
 
     & .progress {
@@ -331,10 +342,13 @@ section.letterStatistic {
       text-align: right;
     }
   }
-
+  .dynamicLetterList:has(+ button[data-show="false"]) > li:nth-child(5)  {
+    margin-bottom: 0;
+  }
   .dynamicLetterList:has(+ button[data-show="false"]) > li:nth-child(5) ~ li {
     height: 0;
     transition: height 250ms ease-in-out;
+    margin-bottom: 0;
   }
 
   .dynamicLetterList:has(+ button[data-show="true"]) > li:nth-child(5) ~ li {
