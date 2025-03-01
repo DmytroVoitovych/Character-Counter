@@ -1,4 +1,4 @@
-import { btnShow, dynamicLetterList } from "./elementList.js";
+import { btnShow} from "./elementList.js";
 
 
 
@@ -54,7 +54,7 @@ const setStatistic = (text, renderFunction,outerEl) => {
       );
     }
     const readyList = arrForRender.toSorted((a,b)=>b.amount - a.amount);
-    renderFunction(readyList,dynamicLetterList,btnShow);
+    renderFunction(readyList,outerEl,btnShow);
   };
 
 
