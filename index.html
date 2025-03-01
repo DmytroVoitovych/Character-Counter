@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="./public/texttitle.png"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Character counter</title>
@@ -34,6 +34,7 @@
             id="analyzeInput"
             placeholder="Start typing here… (or paste your text)"
           ></textarea>
+          <p class="errInfo txt-preset-4">Limit reached! Your text exceeds &nbsp;<span class="dyLimit">0</span>&nbsp; characters.</p>
           <ul class="textOptionList txt-preset-4">
             <li>
               <label for="excludeSpaces"
@@ -49,15 +50,10 @@
                 ><input
                   type="checkbox"
                   name="characterLimit"
-                  id="characterLimit"
-                />Set Character Limit <input
-                type="number"
-                name="numberLimit"
-                id="numberLimit"
-              /></label
-              >
+                  id="characterLimit" />Set Character Limit
+                <input type="number" name="numberLimit" id="numberLimit"
+              /></label>
             </li>
-            
           </ul>
           <p class="timeReading txt-preset-4">
             Approx. reading time: <span class="dynamicTime">0 minute</span>
@@ -88,8 +84,22 @@
           </p>
         </div>
         <ul class="dynamicLetterList txt-preset-4"></ul>
+        <button
+          data-show="false"
+          class="txt-preset-3"
+          type="button"
+          data-arrow="&#709;"
+        >
+          See more
+        </button>
       </section>
     </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+      integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

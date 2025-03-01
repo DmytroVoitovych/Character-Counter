@@ -9,6 +9,10 @@ const excludeSpacesEl = getEl("#excludeSpaces");
 const characterLimitEl = getEl("#characterLimit");
 const numberLimitEl = getEl("#numberLimit");
 const dynamicTime = getEl('.dynamicTime');
+const dynamicLetterList = getEl('.dynamicLetterList');
+const btnShow = getEl('[data-show]');
+const dyLimit = getEl('.dyLimit');
+
 
 export {
   themeSwitcher,
@@ -19,5 +23,8 @@ export {
   excludeSpacesEl,
   characterLimitEl,
   numberLimitEl,
-  dynamicTime
+  dynamicTime,
+  dynamicLetterList,
+  btnShow,
+  dyLimit
 };
