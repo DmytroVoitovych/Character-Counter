@@ -1,3 +1,12 @@
+/* mobile support */
+@font-face { 
+    font-family: "Consolas";
+    src:
+      local("Consolas"),
+      url("../fonts/DM_Sans/static/consolas.ttf") format("truetype");
+  }
+
+
 @font-face {
     font-family: "DMSans";
     src:

@@ -61,7 +61,7 @@ const applySpacePattern = (e, areaEl) => {
     const numNotSpace =
       +areaEl.getAttribute("maxlength") -
       (areaEl.value.length - areaEl.value.match(excludeSpacePattern).length);
-      
+
     const num = formOption.space ? numSpace : numNotSpace;
 
     areaEl.setAttribute("maxlength", num);
@@ -89,8 +89,8 @@ const applyLimit = (e, areaEl) => {
   }
 };
 
+setListenerByQuery(textarea, "input", (e) => getTextForAnalyze(e, formOption));
 setListenerByQuery(themeSwitcher, "change", switchTheme);
 setListenerByQuery(excludeSpacesEl, "change", (e) => applySpacePattern(e, textarea));
 setListenerByQuery(characterLimitEl, "change", (e) => applyLimit(e, textarea));
-setListenerByQuery(textarea, "input", (e) => getTextForAnalyze(e, formOption));
 setListenerByQuery(btnShow, "click", changeButtonData);
