@@ -371,7 +371,6 @@ section.letterStatistic {
   button[data-show]::after {
     content: attr(data-arrow);
     font-family: 'Consolas';
-    font-weight: 100;
     margin-top: 5%;
   }
 
