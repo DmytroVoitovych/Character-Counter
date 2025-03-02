@@ -368,7 +368,7 @@ section.letterStatistic {
   }
 
   button[data-show]::after {
-    content: attr(data-arrow);
+    content: "\02C5";
     font-family: monospace;
     font-weight: 100;
     margin-top: 5%;
