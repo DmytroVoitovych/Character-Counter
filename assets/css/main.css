@@ -115,7 +115,7 @@ section.hero {
       outline: 2px solid var(--purple-500);
     }
 
-    &.isError{
+    &.isError[maxlength]{
     margin-bottom: 12px;
     box-shadow: 0 0 8px 0 var(--err-cl);
     border-color: var(--err-cl);
@@ -141,7 +141,7 @@ section.hero {
       }
     }
    
-    &.isError + .errInfo{
+    &.isError[maxlength] + .errInfo{
     display: flex;  
     color: var(--err-cl); 
     line-height: 1.3; 
